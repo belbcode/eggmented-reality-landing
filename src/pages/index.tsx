@@ -24,7 +24,7 @@ import ig from "../images/instagram.svg"
 import ld from "../images/linkedin.svg"
 
 const IndexPage: React.FC<PageProps> = () => {
-    const items = [
+    const items = img1 ? [
         {
             src: img1,
             url: 'https://innovationisrael.org.il/en/'
@@ -53,7 +53,8 @@ const IndexPage: React.FC<PageProps> = () => {
             src: img7,
             url: 'https://finistere.com/'
         }
-    ]
+    ] : [];
+    console.log(items)
     const landingElement = React.useRef(null)
     const teamElement = React.useRef(null)
     const aboutElement = React.useRef(null)
@@ -78,5 +79,5 @@ const IndexPage: React.FC<PageProps> = () => {
         </Layout>
     )
 }
-export const Head: HeadFC = () => <title>eggmented.com</title>
 export default IndexPage
+export const Head: HeadFC = () => <title>eggmented.com</title>

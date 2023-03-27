@@ -40,7 +40,7 @@ const Marquee = ({ items, refInstance }: { items: Array<Object> , refInstance: a
 
 const Item = ({ src, url, left }: { src: string, url: string, left: number }) => {
     return (
-        <div className="img-containerz" style={{ left: left + 'rem' }} onClick={() => window.open(url, '_blank').focus() }>
+        <div className="img-containerz" style={{ left: left + 'rem' }} onClick={() => {window.open(url, '_blank').focus()} }>
             <img src={src} alt="" />
         </div>
     )
