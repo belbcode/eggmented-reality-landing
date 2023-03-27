@@ -1,0 +1,118 @@
+.newsletter-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+}
+.newsletter-form-container form {
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-form-container form div {
+    margin: 4rem;
+
+}
+
+.newsletter-form-container form div input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Style for the input element when it's in focus */
+.newsletter-form-container form div input:focus {
+  outline: none;
+  box-shadow: 1 1 5px rgba(0.1, 0.1, 0.1, 0.3);
+}
+
+/* Style for the input element when it has content */
+.newsletter-form-container form div input:not(:placeholder-shown) + label {
+  transform: translate(0, -1.5rem);
+  font-size: 0.8rem;
+  color: #0077cc;
+}
+
+/* Style for the input element's label */
+label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* Style for the input element's container */
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Style for the input element's placeholder */
+::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+::-moz-placeholder {
+  color: #bbb;
+}
+
+:-ms-input-placeholder {
+  color: #bbb;
+}
+
+:-moz-placeholder {
+  color: #bbb;
+}
+/* Style for the button element */
+button {
+    display: inline-block;
+    /* padding: 1rem 2rem; */
+    margin-left: 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Style for the button element on hover */
+  button:hover {
+    background-color: #006bb3;
+  }
+  
+  /* Style for the button element on focus */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style for the button element when it's disabled */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style for the button element when it's in an active state */
+  button:active {
+    background-color: #005999;
+    box-shadow: none;
+  }

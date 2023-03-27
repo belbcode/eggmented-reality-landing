@@ -1,0 +1,15 @@
+.container {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 72.5%;
+}
+
+.img-container {
+    
+}

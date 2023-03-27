@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #333333;
+    height: 3rem;
+    /* width: 100%; */
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+}
+
+
+.footer :hover {
+    background-color: #BDBCBC;
+    transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 15%;
+    cursor: pointer;
+}
