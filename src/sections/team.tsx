@@ -41,7 +41,7 @@ const teamMembers = [
         { static: <StaticImage alt="teamMember" src="../assets/Hadasa-Israeli.png" width={250} />, title: 'R&D Scientist', name: 'Dr. Hadar Mor, PhD' },
         { static: <StaticImage alt="teamMember" src="../assets/Helit-Rozen.png"  width={250}/>, title: 'Chief Egg Officer & Co-Founder', name: 'Jonathan Rathauser, MBA' },
         { static: <StaticImage alt="teamMember" src="../assets/Itai-Bloch.png"  width={250}/>, title: 'Chief Technology Officer', name: 'Dr. Helit Rozen, PhD' },
-        { static: <StaticImage alt="teamMember" src="../assets/Jonathan-Rathauser-768x960,png"  width={250}/>, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
+        { static: <StaticImage alt="teamMember" src="../assets/Jonathan-Rathauser-768x960.png"  width={250}/>, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
 ]
 
 const Team = ({ refInstance }: { refInstance: any }) => {
