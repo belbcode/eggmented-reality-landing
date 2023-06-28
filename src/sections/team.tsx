@@ -17,7 +17,7 @@ interface TeamMember {
 }
 
 
-const Card = ({ teamMember }: { teamMember: TeamMember }) => {
+const Card = ({ teamMember, children}: { teamMember: TeamMember }) => {
     const [opacity, setOpacity] = useState('0%')
      
     return (
@@ -29,19 +29,19 @@ const Card = ({ teamMember }: { teamMember: TeamMember }) => {
                 <h3>{teamMember.name}</h3>
                 <h4>{teamMember.title}</h4>
             </div>
-            <img src={teamMember.img} alt="team-member" width={250} />
+            {teamMember.static}
         </div>
     )
 }
 
 
 const teamMembers = [
-        { img: img1, title: 'Scientific Co-Founder', name: 'Itai Bloch, MSc' },
-        { img: img2, title: 'Research Scientist', name: 'Hadassah Israeli, MSc' },
-        { img: img4, title: 'R&D Scientist', name: 'Dr. Hadar Mor, PhD' },
-        { img: img5, title: 'Chief Egg Officer & Co-Founder', name: 'Jonathan Rathauser, MBA' },
-        { img: img6, title: 'Chief Technology Officer', name: 'Dr. Helit Rozen, PhD' },
-        { img: img7, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
+        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Hadar-Mor.png"/>,title: 'Scientific Co-Founder', name: 'Itai Bloch, MSc' },
+        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Itamar-Yadid.png" />, title: 'Research Scientist', name: 'Hadassah Israeli, MSc' },
+        { static: <StaticImage alt="teamMember" src="../assets/Hadasa-Israeli.png" />, title: 'R&D Scientist', name: 'Dr. Hadar Mor, PhD' },
+        { static: <StaticImage alt="teamMember" src="../assets/Helit-Rozen.png" />, title: 'Chief Egg Officer & Co-Founder', name: 'Jonathan Rathauser, MBA' },
+        { static: <StaticImage alt="teamMember" src="../assets/Itai-Bloch.png" />, title: 'Chief Technology Officer', name: 'Dr. Helit Rozen, PhD' },
+        { static: <StaticImage alt="teamMember" src="../assets/Jonathan-Rathauser-768x960,png" />, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
 ]
 
 const Team = ({ refInstance }: { refInstance: any }) => {

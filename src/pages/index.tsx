@@ -54,7 +54,6 @@ const IndexPage: React.FC<PageProps> = () => {
             url: 'https://finistere.com/'
         }
     ];
-    console.log(items)
     const landingElement = React.useRef(null)
     const teamElement = React.useRef(null)
     const aboutElement = React.useRef(null)
