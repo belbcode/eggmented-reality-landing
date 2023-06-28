@@ -1,6 +1,6 @@
 import React from "react"
-import img from "../assets/Picture4-1024x913.png"
 import "../styles/about.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 const About = ({refInstance}:{refInstance: any}) => {
     return (
@@ -21,7 +21,7 @@ const About = ({refInstance}:{refInstance: any}) => {
                 </p>
             </article>
             <div className="about-img-cont">
-                <img src={img} alt="science" />
+                <StaticImage src={"../assets/Picture4-1024x913.png"} alt="science" />
             </div>
         </div>
     )

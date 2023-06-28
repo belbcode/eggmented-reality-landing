@@ -17,7 +17,7 @@ interface TeamMember {
 }
 
 
-const Card = ({ teamMember, children}: { teamMember: TeamMember }) => {
+const Card = ({ teamMember}: { teamMember: TeamMember }) => {
     const [opacity, setOpacity] = useState('0%')
      
     return (
