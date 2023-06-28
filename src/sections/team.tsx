@@ -36,12 +36,12 @@ const Card = ({ teamMember, children}: { teamMember: TeamMember }) => {
 
 
 const teamMembers = [
-        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Hadar-Mor.png"/>,title: 'Scientific Co-Founder', name: 'Itai Bloch, MSc' },
-        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Itamar-Yadid.png" />, title: 'Research Scientist', name: 'Hadassah Israeli, MSc' },
-        { static: <StaticImage alt="teamMember" src="../assets/Hadasa-Israeli.png" />, title: 'R&D Scientist', name: 'Dr. Hadar Mor, PhD' },
-        { static: <StaticImage alt="teamMember" src="../assets/Helit-Rozen.png" />, title: 'Chief Egg Officer & Co-Founder', name: 'Jonathan Rathauser, MBA' },
-        { static: <StaticImage alt="teamMember" src="../assets/Itai-Bloch.png" />, title: 'Chief Technology Officer', name: 'Dr. Helit Rozen, PhD' },
-        { static: <StaticImage alt="teamMember" src="../assets/Jonathan-Rathauser-768x960,png" />, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
+        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Hadar-Mor.png" width={250}/>,title: 'Scientific Co-Founder', name: 'Itai Bloch, MSc' },
+        { static: <StaticImage alt="teamMember" src="../assets/Dr.-Itamar-Yadid.png"  width={250}/>, title: 'Research Scientist', name: 'Hadassah Israeli, MSc' },
+        { static: <StaticImage alt="teamMember" src="../assets/Hadasa-Israeli.png" width={250} />, title: 'R&D Scientist', name: 'Dr. Hadar Mor, PhD' },
+        { static: <StaticImage alt="teamMember" src="../assets/Helit-Rozen.png"  width={250}/>, title: 'Chief Egg Officer & Co-Founder', name: 'Jonathan Rathauser, MBA' },
+        { static: <StaticImage alt="teamMember" src="../assets/Itai-Bloch.png"  width={250}/>, title: 'Chief Technology Officer', name: 'Dr. Helit Rozen, PhD' },
+        { static: <StaticImage alt="teamMember" src="../assets/Jonathan-Rathauser-768x960,png"  width={250}/>, title: 'Scientific Co-Founder', name: 'Dr. Itamar Yadid, PhD' }
 ]
 
 const Team = ({ refInstance }: { refInstance: any }) => {
